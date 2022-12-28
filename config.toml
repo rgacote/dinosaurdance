@@ -1,0 +1,60 @@
+# baseURL = 'http://localhost'
+baseURL = 'https://rgacote.github.io/dinosaurdance/'
+
+#title = 'Dinosaur Dance'
+languageCode = 'en-us'
+theme = 'beautifulhugo'
+paginate = 10
+publishDir = "public"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  #homeSubtitle = "An old dinosaur learning to dance with Elixir"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Metadata mostly used in document's head
+  description = "Learning Elixir"
+  keywords = "homepage, blog"
+  images = ["img"]
+  staticDir = ["static"]
+
+  logo = "./dancing-dinosaur-shutterstock-2169939267.png"
+  hideAuthor = true
+  # wordCount = true
+  readingTime = true
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "Dinosaur Dance"
+    subtitle = "A dinosaur programmer learning to dance with Elixir"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0 Universal</a>'
+    readOtherPosts = "Read other posts"
+    staticDir = ["static"]
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
+
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+
