@@ -2,7 +2,7 @@
 title: "Let the Dance Begin"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-01-01T08:13:51-05:00
+date: 2023-01-01T08:00:00-05:00
 subtitle: "The Plan"
 image: ""
 tags: [LearningElixir, Elixir]
