@@ -5,7 +5,7 @@ type: ""
 date: 2023-01-01T08:13:51-05:00
 subtitle: "The Plan"
 image: ""
-tags: [LearningElixir]
+tags: [LearningElixir, Elixir]
 ---
 
 My preferred approach to learning new programming languages and frameworks is to read then do.
