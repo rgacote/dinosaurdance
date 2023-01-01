@@ -3,12 +3,12 @@ title: "Quotes from Programming Elixir"
 author: "ray@AppropriateSolutions.com"
 type: ""
 date: 2023-01-30T10:09:21-05:00
-subtitle: "by Dave Thomas"
+subtitle: ""
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
-[Programming Elixir ≥1.6: Functional |> Concurrent |> Pragmatic |> Fun](https://pragprog.com/titles/elixir16/programming-elixir-1-6/)
+[Programming Elixir ≥1.6: Functional |> Concurrent |> Pragmatic |> Fun](https://pragprog.com/titles/elixir16/programming-elixir-1-6/) by Dave Thomas.
 
 “But mostly, I want you to have fun.”
 
