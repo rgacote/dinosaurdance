@@ -34,6 +34,8 @@ copyright = "2022 Raymond GA Côté. All rights reserved."
   # wordCount = true
   readingTime = true
 
+  socialShare = true
+
 [taxonomies]
     category = "blog"
     tag      = "tags"
@@ -62,3 +64,6 @@ copyright = "2022 Raymond GA Côté. All rights reserved."
 [Author]
     name = "Raymond GA Côté"
     email = "ray@AppropriateSolutions.com"
+
+[social]
+  twitter = "rgacote"
