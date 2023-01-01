@@ -2,7 +2,7 @@
 title: "Its All About the Memory"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-01-02T09:37:00-05:00
+date: 2023-01-02T08:00:00-05:00
 subtitle: ""
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Erlang]

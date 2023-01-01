@@ -2,7 +2,7 @@
 title: "Programming Elixir Ch 1-4 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-01-02T10:24:30-05:00
+date: 2023-01-02T8:01:00-05:00
 subtitle: "Interesting and/or Unfamiliar"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python, Forth]
