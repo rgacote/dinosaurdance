@@ -11,6 +11,8 @@ tags: [LearningElixir, Elixir]
 Soon as I hit [Programming Elixir](https://pragprog.com/titles/elixir16/programming-elixir-1-6/)
 Chapter 5 I found I needed to start testing some of the concepts.
 
+You can install [Livebook](https://livebook.dev/#install) or install the command line environments.
+
 Here's how I installed Elixir on my Mac OS 13.1 (Ventura) environment.
 
 1) Install [Xcode Command Line Tools](https://mac.install.guide/commandlinetools/4.html)
