@@ -1,5 +1,5 @@
 ---
-title: "Its All About the Memory"
+title: "It's All About the Memory"
 author: "ray@AppropriateSolutions.com"
 type: ""
 date: 2023-01-02T08:00:00-05:00
