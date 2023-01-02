@@ -2,7 +2,7 @@
 title: "Installing Elixir on Mac OS"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-01-04T01:00:00-05:00
+date: 2023-01-03T01:00:00-05:00
 subtitle: ""
 image: ""
 tags: [LearningElixir, Elixir]

@@ -2,7 +2,7 @@
 title: "Programming Elixir Ch 5-X Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-01-04T01:10:00-05:00
+date: 2023-01-10T01:10:00-05:00
 subtitle: ""
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
