@@ -1,9 +1,9 @@
 ---
-title: "Programming Elixir Ch 5-X Notes"
+title: "Programming Elixir Chapter 5 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-01-10T01:10:00-05:00
-subtitle: ""
+date: 2023-01-05T01:00:00-05:00
+subtitle: "Anonymous Functions"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
 ---
@@ -15,6 +15,10 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
 
 3) Named functions are scoped to a module, anonymous functions are not.
 Still trying to fully understand this scoping.
+
+4) Anonymous functions remember the values of variables in the outer scope.
+This can be both powerful and confusing.
+
 
 4) The three-value FizzBuzz task was such fun that I looked ahead a little and did a more traditional FizzBuzz example.
     {{< highlight elixir >}}
@@ -36,8 +40,12 @@ Still trying to fully understand this scoping.
 
     {{< /highlight >}}
 
-5) In the Greeter example, if you want the output, "I don't know you Dave", you need to match on `name` vs. `_`.
+1) `_ -> value` does not work in the above FizzBuzz since the passed parameter is not captured.
+   `_ -> "Hello"` would work since we arent' using the passed parameter.
 
-6) The `&` shortcut to anonymous functions reminds me of the Python lambda function.
+5) It is going to take my Python fingers some time to stop typing `for x in`.
 
+6) In the Greeter example, if you want the output, "I don't know you Dave", you need to match on `name` vs. `_`.
+   `_`, `^varname`, and `varname` in an anonymous function match statement match anything, the original value of the varname, and the varname.
 
+7) The `&` shortcut to anonymous functions reminds me of the Python lambda function.
