@@ -35,3 +35,6 @@ and perhaps to contribute to the community in some small way.
 You can find me in the Fediverse as [@rgacote@genserver.social](https://genserver.social/rgacote).
 
 Let's dance!
+
+_All notes and comments are my own opinion._
+
