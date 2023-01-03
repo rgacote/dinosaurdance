@@ -13,7 +13,7 @@ tags: [LearningElixir, Elixir, IEx, vim]
   alt="Exit sign showing figure dashing to the exit."
 >}}
 
-In order to exit the interactive Elixir shell (iex), all you need to do type:
+In order to exit the interactive Elixir shell (iex), all you need do is type:
 - `Ctrl-c` twice; or
 - `Ctrl-g`, `q`, `<Return>`; or sometimes
 - `Ctrl-\`
