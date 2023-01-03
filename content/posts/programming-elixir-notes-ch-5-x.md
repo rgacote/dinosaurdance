@@ -17,7 +17,7 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
 Still trying to fully understand this scoping.
 
 4) The three-value FizzBuzz task was such fun that I looked ahead a little and did a more traditional FizzBuzz example.
-    ```
+    {{< highlight elixir >}}
     fizzbuzz = fn
       value when rem(value, 3) == 0 and rem(value, 5) == 0 -> "FizzBuzz"
       value when rem(value, 3) == 0 -> "Fizz"
@@ -28,13 +28,13 @@ Still trying to fully understand this scoping.
     for x <- Enum.to_list(1..100) do
       fizzbuzz.(x)
     end
-    ```
-    ```
+
     [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz", 16, 17,
     "Fizz", 19, "Buzz", "Fizz", 22, 23, "Fizz", "Buzz", 26, "Fizz", 28, 29, "FizzBuzz", 31, 32, "Fizz",
     34, "Buzz", "Fizz", 37, 38, "Fizz", "Buzz", 41, "Fizz", 43, 44, "FizzBuzz", 46, 47, "Fizz", 49,
     "Buzz", ...]
-    ```
+
+    {{< /highlight >}}
 
 5) In the Greeter example, if you want the output, "I don't know you Dave", you need to match on `name` vs. `_`.
 
