@@ -9,7 +9,7 @@ tags: [LearningElixir, Elixir, IEx, vim]
 ---
 
 {{<figure
-  src="./andrew-teoh-SKrgZQgYy2g-exit-unsplash-cropped.png"
+  src="/dinosaurdance/posts/exiting-vim-is-easy/andrew-teoh-SKrgZQgYy2g-exit-unsplash-cropped.png"
   alt="Exit sign showing figure dashing to the exit."
 >}}
 
