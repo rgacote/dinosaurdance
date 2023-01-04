@@ -13,14 +13,14 @@ The decision to make notes and document my learning experience is causing me to
 slow down and spend more time with what I'm reading.
 
 1) The caret (`^`) _pins_ a variable's value in a match:
-    ```
+    {{< highlight elixir >}}
     a = 1
     1
     a = 2
     2
     ^a = 3
     (Error)
-    ```
+    {{< /highlight >}}
 
 2) What if 99 suddenly became 100?
 I once defined 2 as 0 in Forth to make a point.
@@ -43,16 +43,16 @@ _Something_ needs to be reading the file and it is not 'my' current process.
 Use a variable with a leading underscore (`_var_name`) if it might not be matched.
 
 8) Distinguish between `==` value equality and `===` strict equality.
-    ```
+    {{< highlight elixir >}}
     1 == 1.0  # True
     1 === 1.0 # False
-    ```
+    {{< /highlight >}}
 
     This is different than the Python `==` operator that is true if two variables point to the same object in memory.
 
 9) The preferred way to set a variable to one of several values is to evaluate and assign vs. assign, and assign.
 Example from the book:
-    ```
+    {{< highlight elixir >}}
     # No
     case integer do
       1 -> atom = :one
@@ -65,4 +65,4 @@ Example from the book:
         1 -> :one
         2 -> :two
       end
-    ```
+    {{< /highlight >}}
