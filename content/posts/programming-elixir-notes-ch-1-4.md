@@ -66,3 +66,5 @@ Example from the book:
         2 -> :two
       end
     {{< /highlight >}}
+
+_All notes and comments are my own opinion._

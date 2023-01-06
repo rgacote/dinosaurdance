@@ -29,3 +29,5 @@ Let's dance!
 
 ## Online Course
 1. Coding Gnome's [Elixir for Programmers](https://codestool.coding-gnome.com/courses/elixir-for-programmers-2)
+
+_All notes and comments are my own opinion._

@@ -1,9 +1,9 @@
 ---
-title: "Programming Elixir Chapter 5 Notes"
+title: "Anonymous Functions"
 author: "ray@AppropriateSolutions.com"
 type: ""
 date: 2023-01-05T01:00:00-05:00
-subtitle: "Anonymous Functions"
+subtitle: "Programming Elixir Chapter 5 Notes"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
 ---
@@ -49,3 +49,5 @@ This can be both powerful and confusing.
    `_`, `^varname`, and `varname` in an anonymous function match statement match anything, the original value of the varname, and the varname.
 
 7) The `&` shortcut to anonymous functions reminds me of the Python lambda function.
+
+_All notes and comments are my own opinion._

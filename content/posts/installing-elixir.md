@@ -68,3 +68,5 @@ to determine which versions to install.
    {{< highlight bash >}}
    iex
    ```
+
+_All notes and comments are my own opinion._

@@ -24,3 +24,5 @@ A functional language such as Erlang and Elixir removes this complexity.
 “As garbage collection once freed developers from the shackles of memory
 management, Elixir is here to free you from antiquated concurrency
 mechanisms and bring you joy when writing concurrent code.” _José Valim_
+
+_All notes and comments are my own opinion._
