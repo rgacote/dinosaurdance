@@ -27,3 +27,6 @@ Instead it’s like an assertion.”
 
 “Immutable Data Is Known Data”
 
+“you should always use parentheses around function parameters in pipelines.”
+
+“every programmer is a library writer.”

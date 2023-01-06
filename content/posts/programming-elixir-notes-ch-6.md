@@ -2,17 +2,14 @@
 title: "Programming Elixir Chapter 6 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-01-15T01:00:00-05:00
+date: 2023-01-09T01:00:00-05:00
 subtitle: "Modules and Named Functions"
 image: ""
-tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
+tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
 1) It takes awhile to get used to not seeing function `return` statements.
 Drives home the point that everything is an evaluation.
-
-1) Unlike Python, everything in an Elixir module must be a function (named or anonymous).
-Python allows you to run code when a module is loaded but Elixir is compiled, so there's nothing to run.
 
 1) If you define an anonymous function within a module it must either be used or start with the underscore (`_`) character.
     {{< highlight elixir >}}
@@ -44,16 +41,17 @@ Python allows you to run code when a module is loaded but Elixir is compiled, so
 1) Elixir pattern matching is depending on code order, runs from the top down.
 
 1) I seem to have missed the discussion on how to handle list iteration.
-   Had to look up how to split list into first/rest. (car/cdr anyone?)
+   Had to look up how to split list into first/rest. (CAR/CDR anyone?)
     {{< highlight elixir >}}
     def sumit([first | rest]), do: ...
     {{< /highlight >}}
 
 1) I found the explanation of using a function head and default parameters confusing, but the `Params` example is clarifying.
 
-1) Ranges are maps. There doesn't seem to be a way to check that a map is specifically a range.
+1) Ranges are maps.
+   There doesn't seem to be a way to check that a map is specifically a range.
 
-1) My solution to the Chopped exercise:
+1) My solution to the Chopped exercise.
     {{< highlight elixir >}}
     defmodule Chopped do
 
