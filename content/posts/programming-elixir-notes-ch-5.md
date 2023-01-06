@@ -1,9 +1,9 @@
 ---
-title: "Anonymous Functions"
+title: "Programming Elixir Chapter 5 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
 date: 2023-01-05T01:00:00-05:00
-subtitle: "Programming Elixir Chapter 5 Notes"
+subtitle: "Anonymous Functions"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
 ---
