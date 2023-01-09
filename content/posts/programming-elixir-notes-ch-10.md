@@ -37,12 +37,12 @@ defmodule Ch10 do
   def all?(lst, func) do
     Enum.reduce(Enum.map(lst, func), true, &(&1 and &2))
   end
+end
 
 Ch10.all?([], &(&1 > 5))
 Ch10.all?([8, 9, 10],  &(&1 > 5))
 Ch10.all?([8,3,21],  &(&1 > 5))
 
-end
 {{< /highlight >}}
 
 ### each
@@ -50,7 +50,7 @@ Invoke the given func for each element in the enumerable and return :ok.
 The Elixir documentation example shows using it with IO.puts.
 
 {{< highlight elixir >}}
-defmodule Ch10.each do
+defmodule Ch10 do
 
   def each(lst, func) do
     for el <- lst do
@@ -58,9 +58,9 @@ defmodule Ch10.each do
     end
   :ok
   end
-
-Ch10.each.each([1, 3, 5], &(IO.puts(&1)))
 end
+
+Ch10.each([1, 3, 5], &(IO.puts(&1)))
 {{< /highlight >}}
 
 ## filter
@@ -140,10 +140,11 @@ Ch10.take([1,2,3], -2)
 
 {{< /highlight >}}
 
-## Exercise: Lists and Recursions 6 -- Inefficient way
+## Exercise: Lists and Recursions 6 -- First Attempt
 Write a flatten(list).
 The exercise is marked as hard and notes I may need to call Enum.reverse.
 Did not find it difficult and did not need to reverse list.
+Obviously not approaching it properly.
 It was also inefficient as appending two lists requires a list copy.
 {{< highlight elixir >}}
 defmodule Ch10 do
@@ -168,11 +169,37 @@ defmodule Ch10 do
   end
 end
 
-#Ch10.flatten([1, 2, 3])
 Ch10.flatten([ 1, [ 2, 3, [4] ], 5, [[[6]]]])
 
 {{< /highlight >}}
 
-## Exercise: Lists and Recursions 6 -- Better way?
+## Exercise: Lists and Recursions 6 -- Recursively
+Re-solved the problem with recursion.
+
+{{< highlight elixir >}}
+defmodule Ch10 do
+  defp flatten_it([], acc) do
+    acc
+  end
+
+  defp flatten_it([head | tail], acc) when is_list(head) do
+    # Head is a list.
+    IO.inspect head, label: "sublist"
+    flatten_it(tail, flatten_it(head, acc))
+  end
+
+  defp flatten_it([head | tail], acc) do
+    # Head is not a list.
+    IO.inspect head, label: "element"
+    flatten_it(tail, [head | acc])
+  end
+
+  def flatten(lst) do
+    Enum.reverse(flatten_it(lst, []))
+  end
+end
+
+Ch10.flatten([ 1, [ 2, 3, [4] ], 5, [[[6]]]])
+{{< /highlight >}}
 
 _All notes and comments are my own opinion._
