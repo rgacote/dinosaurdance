@@ -3,7 +3,7 @@ title: "Programming Elixir Chapter 10 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
 date: 2023-01-21T01:00:00-05:00
-subtitle: "Processing Collections–Enum and Stream"
+subtitle: "Processing Collections—Enum and Stream"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
 ---
@@ -18,6 +18,23 @@ Now we're getting into the more familiar iterables.
    `Enum.att(10..20, 0)` is `10`.
 
 1) After working through the first set of exercises, the need to use recursion vs. iteration became clearer.
+
+1) The countdown example introduces message passing.
+
+1) Comprehension simplifies the earlier `filter` [exercise](http://localhost:1313/dinosaurdance/posts/programming-elixir-notes-ch-10/).
+
+## Rewrite the Filter Exercise
+Rewrite the Lists and Recursions 5 `filter` using comprehension.
+
+{{< highlight elixir >}}
+defmodule Ch10 do
+  def filter(lst, func) do
+    for x <- lst, func.(x), do: x
+  end
+end
+
+Ch10.filter([1, 2, 3], fn x -> rem(x, 2) == 0 end)
+{{< /highlight >}}
 
 
 ## Exercise: Lists and Recursions 5
@@ -200,6 +217,62 @@ defmodule Ch10 do
 end
 
 Ch10.flatten([ 1, [ 2, 3, [4] ], 5, [[[6]]]])
+{{< /highlight >}}
+
+## ListsAndRecursion-7
+Used the `prime?` function from a Steve Molloy [gist](https://gist.github.com/stevemolloy/64ff06327c5a9f72297a82e061b15460)
+
+{{< highlight elixir >}}
+defmodule Ch10 do
+  # ListsAndRecursions-4
+  def span(from, to) when from==to, do: [to]
+
+  def span(from, to) do
+    [from | span(from+1, to)]
+  end
+
+  def prime?(2), do: :true
+  def prime?(num) do
+    last = num
+            |> :math.sqrt
+            |> Float.ceil
+            |> trunc
+    notprime = 2..last
+      |> Enum.any?(fn a -> rem(num, a)==0 end)
+    !notprime
+  end
+end
+
+for x <- Ch10.span(1,100), Ch10.prime?(x), do: x
+{{< /highlight >}}
+
+## ListsAndRecursions-8
+{{< highlight elixir >}}
+defmodule Ch10 do
+  def add_tax(orders, tax_rates) do
+
+    taxed = for order <- orders do
+      state = order[:ship_to]
+      tax = tax_rates[state]
+      if is_nil(tax) do
+        # Return order with 0 tax.
+        Keyword.put order, :tax, 0.00
+      else
+        Keyword.put order, :tax, (order[:net_amount] * tax)
+      end
+    end
+    taxed
+  end
+end
+
+tax_rates = [ NC: 0.075, TX: 0.08]
+orders = [
+  [ id: 123, ship_to: :NC, net_amount: 100.00 ],
+  [ id: 124, ship_to: :OK, net_amount: 35.50 ],
+  [ id: 125, ship_to: :TX, net_amount: 24.00]
+]
+Ch10.add_tax(orders, tax_rates)
+
 {{< /highlight >}}
 
 _All notes and comments are my own opinion._
