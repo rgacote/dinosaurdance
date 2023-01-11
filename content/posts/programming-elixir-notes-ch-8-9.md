@@ -2,7 +2,7 @@
 title: "Programming Elixir Chapter 8 and 9 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-01-21T01:00:00-05:00
+date: 2023-01-11T01:00:00-05:00
 subtitle: "Maps, Keyword Lists, etc. and Types"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
