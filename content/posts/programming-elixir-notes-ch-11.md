@@ -19,7 +19,7 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
    - Multiple delimiter choices.
    - Some sigils have optional specifiers.
 
-1. Double quotes declare strings.
+1. Double quotes declare strings, which are binary lists.
    Single quotes declare character lists.
    Vastly different in the Elixir world.
 
@@ -27,6 +27,8 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
    For example:
    - `[6]` displays as `[6]` but `[8]` displays as '\b' (bell).
    - `[126]` displays as `~` but `[127]` displays as `[127]`.
+
+1. The `next_codepoint` example shows how to create a byte list iterator.
 
 ## Exercises
 ### StringsAndBinaries-1
@@ -117,7 +119,77 @@ Ch11.calculate('10+3')
 
 #### Compared to Dave's
 - created number and operator parsers that skipped spaces;
-- created an anonymous function to perform the math.
+- created an anonymous function to perform the math;
+- used `div` for integer division.
 
+### StringsAndBinaries-5
+Write a function that takes a list of double-quoted strings and prints each on a separate line, centered in a column that has the width of the longest string.
+Make sure it works with UTF characters.
+{{< highlight elixir >}}
+defmodule Ch11 do
+  defp _longest([], length) do
+    length
+  end
+  defp _longest([head | tail], length) do
+    if String.length(head) > length do
+      _longest(tail, String.length(head))
+    else
+      _longest(tail, length)
+    end
+  end
+  defp _centered([], _) do
+
+  end
+  defp _centered([head | tail], padding) do
+    head_length = div(String.length(head), 2)
+    base = String.duplicate(" ", padding - head_length)
+    IO.puts(base <> head)
+    _centered(tail, padding)
+  end
+  def center(list) do
+    longest = _longest(list, 0)
+    IO.puts("Maximum string length: #{longest}.")
+    # Want 1/2 of numbers up front.
+    _centered(list, div(longest, 2))
+  end
+end
+
+Ch11.center(["cat", "zebra", "elephant"])
+{{< /highlight >}}
+
+#### Compared to Dave's
+- used a pipe'd approach
+- created a tuple of string and string's length so as to not calculate length twice.
+- my approach is still to Python'ish. Need to start using piping more.
+
+
+### StringsAndBinaries-6
+Write a function to capitalize the sentences in a string.
+{{< highlight elixir >}}
+defmodule Ch11 do
+  defp until_period(<< head :: utf8, tail :: binary >>, agg) when head == ?. do
+    capitalize(tail, [head | agg])
+  end
+  defp until_period(<< head :: utf8, tail :: binary >>, agg) do
+    until_period(tail, [ head |agg ])
+  end
+  defp capitalize(<<>>, agg) do
+    :string.reverse(agg)
+  end
+  defp capitalize(<< head :: utf8, tail :: binary >>, agg) when head == 32 do
+    capitalize(tail, [:string.to_upper(head) | agg])
+  end
+  defp capitalize(<< head :: utf8, tail :: binary >>, agg) do
+    until_period(tail, [:string.to_upper(head) | agg])
+  end
+  def capitalize_sentences(sentences) when is_binary(sentences) do
+    # First character is start of sentence.
+    # Ignore leading spaces as it is not in the problem definition.
+    capitalize(sentences, <<>>)
+  end
+end
+
+Ch11.capitalize_sentences("oh. a dog. woof.")
+{{< /highlight >}}
 
 _All notes and comments are my own opinion._
