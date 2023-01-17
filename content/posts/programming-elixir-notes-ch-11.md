@@ -2,7 +2,7 @@
 title: "Programming Elixir Chapter 11 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-01-22T01:00:00-05:00
+date: 2023-01-17T01:00:00-05:00
 subtitle: "Strings and Binaries"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
@@ -191,5 +191,55 @@ end
 
 Ch11.capitalize_sentences("oh. a dog. woof.")
 {{< /highlight >}}
+
+#### Compared to Dave's
+- I'm writing much more code;
+- done again with pipe and using `String.split`;
+- I interpreted problem as working with bytes. Dave uses String module.
+
+### StringsAndBinaries-7
+Add tax to orders loaded from a file.
+
+{{< highlight elixir >}}
+defmodule Ch11 do
+  def calculate_tax(path, tax_rates) do
+    read_orders(path)
+    |> Enum.map(fn order -> apply_tax(order, tax_rates) end )
+  end
+
+  def read_orders(path) do
+    file = File.open!(path)
+    [header | lines] = Enum.map(IO.stream(file, :line), &String.trim(&1))
+    header = String.split(header, ",")
+    header = Enum.map(header, &String.to_atom(&1))
+    Enum.map(lines, fn line -> parse_order(String.split(line, ","), header) end )
+  end
+
+  def parse_order(line, header) do
+    line = Enum.zip(header, line)
+    id = Keyword.get(line, :id)
+    line = Keyword.replace(line, :id, String.to_integer(id))
+    net_amount = Keyword.get(line, :net_amount)
+    line = Keyword.replace(line, :net_amount, String.to_float(net_amount))
+    ship_to = Keyword.get(line, :ship_to)
+    Keyword.replace(line, :ship_to, String.to_atom(ship_to))
+  end
+
+  def apply_tax(order, tax_rates) do
+    net_amount = Keyword.get(order, :net_amount)
+    ship_to = Keyword.get(order, :ship_to)
+    tax = Keyword.get(tax_rates, ship_to, 0)
+    Keyword.put(order, :total_amount, net_amount + (tax * net_amount))
+  end
+end
+
+tax_rates = [ NC: 0.075, TX: 0.08 ]
+
+orders = Ch11.calculate_tax("orders.csv", tax_rates)
+IO.inspect(orders)
+{{< /highlight >}}
+
+#### Compared to Dave's
+- didn't use stream, so not as efficient for large order files
 
 _All notes and comments are my own opinion._
