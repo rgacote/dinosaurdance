@@ -30,6 +30,8 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
 
 1. The `next_codepoint` example shows how to create a byte list iterator.
 
+1. I became more comfortable with using pattern matching and guard clauses at the function level vs. if/else clauses.
+
 ## Exercises
 ### StringsAndBinaries-1
 Write a function that returns true if a single-quoted string contains only printable ASCII characters (space through tilde).

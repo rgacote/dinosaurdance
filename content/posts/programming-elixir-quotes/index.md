@@ -30,3 +30,9 @@ Instead it’s like an assertion.”
 “you should always use parentheses around function parameters in pipelines.”
 
 “every programmer is a library writer.”
+
+“In Elixir we write lots of small functions, and a combination of guard
+clauses and pattern matching of parameters replaces most of the
+control flow seen in other languages.”
+
+“Elixir exceptions are intended for things that should never happen in normal operation”
