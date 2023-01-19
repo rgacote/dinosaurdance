@@ -35,4 +35,18 @@ mix run -e 'Issues.CLI.run(["rgacote", "ProgrammingElixirExercises"])'
 
 {{< /highlight >}}
 
+# Creating a CLI
+Builds the commandline interface in the home directory.
+
+1. Add a `main(argv)` function to the CLI module.
+1. Add line to mix.exs `def project` section:
+    ```
+    escript: [main_module: Issues.CLI],
+    ```
+1. Build:
+    ```
+    mix escript.build
+    ```
+
+
 _All notes and comments are my own opinion._
