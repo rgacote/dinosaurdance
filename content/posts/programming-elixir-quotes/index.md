@@ -2,7 +2,7 @@
 title: "Quotes from Programming Elixir"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-01-30T10:09:21-05:00
+date: 2024-01-01T01:09:21-05:00
 subtitle: ""
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
