@@ -8,6 +8,8 @@ image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
+
+
 1. `mix new` did not create the ./config directory.
 
 1. `elem` accesses a tuple by index.
@@ -24,5 +26,14 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 
 ### OrganizingAProject-1
 Copied the project as recommended.
+
+### OrganizingAProject-2
+Added dependency as directed.
+
+### OrganizingAProject-3
+Sort of duplicated the code.
+In playing around with the `Poison` module I accidentally used `encode!` instead of `parse!`,
+which led me down a rabbit hole of learning how to debug in IEx.
+Useful exercise overall.
 
 _All notes and comments are my own opinion._
