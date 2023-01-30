@@ -2,13 +2,13 @@
 title: "IEx and Mix Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-01-27T01:00:00-05:00
+date: 2023-01-31T01:00:00-05:00
 subtitle: ""
 image: ""
 tags: [LearningElixir, Elixir]
 ---
-
-Took a side-foray into IEx and debugging after being away for a few days.
+Further side-quest to become comfortable with IEx/mex/dbg/pry.
+Learning commandline debugging since I've not been able to figure out how to launch a debuggable commandline program from VSCode.
 
 ## IEx
 

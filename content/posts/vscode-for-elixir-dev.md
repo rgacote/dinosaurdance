@@ -2,13 +2,16 @@
 title: "Setting up VSCode for Elixir Development"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-01-28T01:00:00-05:00
+date: 2023-01-30T01:00:00-05:00
 subtitle: ""
 image: ""
 tags: [LearningElixir, Elixir]
 ---
 
 Setting up a VSCode environment before tackling the Chapter 13 exercises.
+
+A side-foray into tooling after being away for a few days.
+
 
 
 ## Basic Installation
