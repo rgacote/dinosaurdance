@@ -5,7 +5,7 @@ type: ""
 date: 2023-01-30T01:00:00-05:00
 subtitle: ""
 image: ""
-tags: [LearningElixir, Elixir]
+tags: [LearningElixir, Elixir, VSCode]
 ---
 
 Setting up a VSCode environment before tackling the Chapter 13 exercises.
