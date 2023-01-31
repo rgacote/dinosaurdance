@@ -7,7 +7,7 @@ subtitle: ""
 image: ""
 tags: [LearningElixir, Elixir, IEx, mix, pry, dbg]
 ---
-Further side-quest to become comfortable with IEx/mex/dbg/pry.
+Further side-quest to become comfortable with IEx/mix/dbg/pry.
 Learning commandline debugging since I've not been able to figure out how to launch a debuggable commandline program from VSCode.
 
 ## IEx
