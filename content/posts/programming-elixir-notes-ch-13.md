@@ -2,7 +2,7 @@
 title: "Programming Elixir Chapter 13 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-12-30T01:00:00-05:00
+date: 2023-02-20T01:00:00-05:00
 subtitle: "Organizing a Project"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
@@ -31,9 +31,34 @@ Copied the project as recommended.
 Added dependency as directed.
 
 ### OrganizingAProject-3
-Sort of duplicated the code.
-In playing around with the `Poison` module I accidentally used `encode!` instead of `parse!`,
+- Sort of duplicated the code.
+- In playing around with the `Poison` module I accidentally used `encode!` instead of `parse!`,
 which led me down a rabbit hole of learning how to debug in IEx.
-Useful exercise overall.
+
+### OrganizingAProject-4
+[My Solution](https://github.com/rgacote/ProgrammingElixirExercises/tree/OrganizingAProject-4/issues)
+is moderately different from Dave's.
+I see where I can improve efficiencies by using map/reduce and doing additional pipelining.
+
+Most importantly, it works!
+
+- Spent a lot of time Googling.
+- Wrapping my head around piping and enumeration.
+- Testing helps.
+- Short snippets in LiveBook helps.
+- Practiced documenting.
+
+- Reduce a list of maps into a map:
+  {{< highlight elixir >}}
+  Enum.reduce(list_of_maps, fn x, y ->
+    Map.merge(x, y, fn _k, v1, v2 -> v2 ++ v1 end)
+  end)
+  {{< /highlight >}}
+
+- Reduce a list of tuples into a map:
+  {{< highlight elixir >}}
+  Enum.into(list, %{})
+  {{< /highlight >}}
+
 
 _All notes and comments are my own opinion._
