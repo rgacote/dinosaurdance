@@ -8,12 +8,13 @@ image: ""
 tags: [LearningElixir, Elixir, Python]
 ---
 
-Back in college I struggled with Calculus, had a hard time grasping the current concepts.
-After each semester break, first thing the teacher would do would be to give a test on the last semester's topics.
-I'd ace that test. Just took awhile for the concepts to settle into my brain.
+Back in college I struggled with Calculus; had a hard time grasping the concept of the day.
+After a semester break, I'd ace the test reviewing previous topics.
+Just took awhile for the concepts to settle into my brain.
 
 I'm experiencing a similar effect with Elixir.
-Came back after a few days and was able to make significant progress on Formatting a Table.
+Came back after a few days and was able to make significant progress on Chapter 13's _Formatting a Table_ exercise.
+
 Things are starting to click.
 
 1. There's always a function for it.
