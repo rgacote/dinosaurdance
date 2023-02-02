@@ -70,7 +70,7 @@ which led me down a rabbit hole of learning how to debug in IEx.
 
 ### OrganizingAProject-4
 [My Solution](https://github.com/rgacote/ProgrammingElixirExercises/tree/OrganizingAProject-4/issues)
-is moderately different from Dave's.
+to formatting a table is moderately different from Dave's.
 I see where I can improve efficiencies by using map/reduce and doing additional pipelining.
 
 Most importantly, it works!
