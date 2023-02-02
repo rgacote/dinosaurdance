@@ -94,6 +94,10 @@ Most importantly, it works!
   {{< /highlight >}}
 
 ### OrganizingAProject-5
+Worked through the logging, debugging, and documentation steps.
+Had made the commandline application earlier.
+
+### OrganizingAProject-6
 [My Solution](https://github.com/rgacote/ProgrammingElixirExercises/tree/main/noaa)
 to the NOAA airport weather lookup.
 
