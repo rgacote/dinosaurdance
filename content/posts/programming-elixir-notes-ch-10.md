@@ -275,4 +275,4 @@ Ch10.add_tax(orders, tax_rates)
 
 {{< /highlight >}}
 
-_All notes and comments are my own opinion._
+_All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_

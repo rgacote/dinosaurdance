@@ -65,4 +65,4 @@ I'm letting the IDE do the work.
 mix format
 {{< /highlight >}}
 
-_All notes and comments are my own opinion._
+_All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_

@@ -50,4 +50,4 @@ This can be both powerful and confusing.
 
 7) The `&` shortcut to anonymous functions reminds me of the Python lambda function.
 
-_All notes and comments are my own opinion._
+_All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_

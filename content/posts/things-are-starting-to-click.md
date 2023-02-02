@@ -47,3 +47,4 @@ Things are starting to click.
    In Python I'd end up building more complex functions as it felt reasonable to do 'one more thing' in a function.
    Smaller functions feel natural in Elixir.
 
+_All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_

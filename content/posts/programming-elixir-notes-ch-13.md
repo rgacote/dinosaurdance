@@ -103,4 +103,4 @@ to the NOAA airport weather lookup.
 
 - Needed to add `:httpoison` and `:elixir_xml_to_map` to applications.
 
-_All notes and comments are my own opinion._
+_All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_

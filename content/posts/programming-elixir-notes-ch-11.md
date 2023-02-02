@@ -244,4 +244,4 @@ IO.inspect(orders)
 #### Compared to Dave's
 - didn't use stream, so not as efficient for large order files
 
-_All notes and comments are my own opinion._
+_All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_

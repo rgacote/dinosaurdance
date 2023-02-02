@@ -105,4 +105,4 @@ file = Ch12.ok! File.open("abcd")
 
 {{< /highlight >}}
 
-_All notes and comments are my own opinion._
+_All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_

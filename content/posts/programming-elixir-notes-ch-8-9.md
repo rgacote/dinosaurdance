@@ -20,4 +20,4 @@ Neither chapter has exercises.
 1) Different syntax for updating a key's value and adding a key.
 
 
-_All notes and comments are my own opinion._
+_All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_

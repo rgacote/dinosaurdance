@@ -25,4 +25,4 @@ A functional language such as Erlang and Elixir removes this complexity.
 management, Elixir is here to free you from antiquated concurrency
 mechanisms and bring you joy when writing concurrent code.” _José Valim_
 
-_All notes and comments are my own opinion._
+_All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_

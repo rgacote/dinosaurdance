@@ -48,4 +48,5 @@ A side-foray into tooling after being away for a few days.
 }
 {{< /highlight >}}
 
-_All notes and comments are my own opinion._
+_All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_
+
