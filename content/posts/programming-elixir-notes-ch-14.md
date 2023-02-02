@@ -64,3 +64,5 @@ I'm letting the IDE do the work.
 {{< highlight bash >}}
 mix format
 {{< /highlight >}}
+
+_All notes and comments are my own opinion._
