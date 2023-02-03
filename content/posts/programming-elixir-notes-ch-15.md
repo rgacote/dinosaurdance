@@ -47,6 +47,28 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 1. Processes can be linked together to handle process death, for example.
    Better to use OTP Supervisors for this.
 
+1. Elixir docs note you should usually use `spawn_link` and not `spawn`.
+   `spawn_link` connects child to parent in way I don't yet fully understand.
+   Initial understanding is that backtraces (exits and exceptions) show parent in the backtrace.
+
+1. `spawn_monitor` is more understandable to me.
+   The parent receives exit message from the child.
+
+   Tried working through how to catch exceptions but have not gotten the pattern matching right yet.
+
+1. The _Parallel Map_ section answers the question of how to receive messages in order.
+   Use the original pid (`^pid`) in the map.
+
+1. Tested this by rewriting the spawned anonymous function to sleep a random amount of time
+    {{< highlight elixir >}}
+    Parallel.pmap 1..10, fn(number) ->
+      random_seconds = Enum.random(0..10) * 1000
+      IO.puts("#{random_seconds}")
+      :timer.sleep(random_seconds)
+    number * number
+    end
+    {{< /highlight >}}
+
 ## WorkingWithMultipleProcesses-1
 Ran on my machine.
 
@@ -63,5 +85,46 @@ Have them send the tokens back.
   I'd possibly go to a queue?
 
 ## WorkingWithMultipleProcesses-3
+Use spawn_link to start a process.
+Have that process send a message to the parent and exit immediately.
+Have parent sleep for 1000ms then receive as many messages as are waiting.
+
+### Answers
+- [Source code](https://github.com/rgacote/ProgrammingElixirExercises/blob/main/WorkingWithMultipleProcesses-3.exs)
+- Do not need to be waiting for messages before they are sent.
+- Not sure how to do the tracing as all the examples I find are for within a mix environment and not an isolated script.
+
+## WorkingWithMultipleProcesses-4
+Do the same, but have the child raise an exception.
+What differences to you see?
+
+### Answers
+- Stack traces are different.
+
+## WorkingWithMultipleProcesses-5
+Change `spawn_link` to `spawn_monitor`.
+
+## Answers
+- [Source code](https://github.com/rgacote/ProgrammingElixirExercises/blob/main/WorkingWithMultipleProcesses-5.exs)
+- Was able to catch the exit.
+- Need to figure out how to catch exceptions.
+
+## WorkingWithMultipleProcesses-6
+Why assign `self` to `me` in the `Parallel` example?
+
+### Answers
+- The `self()` in the anonymous function is the pid of the spawned function.
+  Spawning occurs before function executes.
+
+## WorkingWithMultipleProcesses-7
+Change `^pid` (and `pid`) to `_pid`.
+Any difference in output.
+
+### Answers
+- No.
+- Yes, when I add the random sleep.
+- A nice little race condition.
+
+
 
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_
