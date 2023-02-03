@@ -133,7 +133,10 @@ Any difference in output.
 Ran and played with several variations of the Fibonacci code.
 
 ## WorkingWithMultipleProcesses-9
-Punted on this exercise as I realize I'm likely to use GenServer in any production code.
-
+- Punted on this exercise as I realize I'm likely to use GenServer in any production code.
+- After just writing the above, I read an article warning against the [overuse](https://learn-elixir.dev/blogs/dangers-of-genservers) of GenServers.
+  The caution is that GenServers become a bottlenecks because they handle one process message at a time.
+  My comment about using GenServer for this exercise stands, because it would be feeding one
+  filename at a time to multiple processes.
 
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_
