@@ -2,28 +2,26 @@
 title: "Actors"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-02-04T01:00:00-05:00
+date: 2023-02-06T01:00:00-05:00
 subtitle: "It's About Time"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
-The lure of Elixir is not functional programming, it's Actors.
+For me, the lure of Elixir is not functional programming, it's Actors.
 
 When I first learned of Object Oriented Programming (OOP) my reading quickly
 lead me to [Smalltalk](https://en.wikipedia.org/wiki/History_of_the_Actor_model#Smalltalk)
 and then to [Simula](https://en.wikipedia.org/wiki/History_of_the_Actor_model#Simula).
 
-At the time, I was professionally digging out from large assembly language and C projects
+At the time, I was professionally buried in large assembly language and C projects
 (and, so help me, Forth).
 Reading about Smalltalk and Simula formed my understanding of OOP.
 In my mind, a program could be built of simple little objects all chatting with each other.
-Each of these little programs would run asynchronously.
+Each of these little objects ran independently and asynchronously.
 
-Seymour Papert and Marvin Minsky described this model as a "little person."
-A concept which evolved from childhood educational theories.
+Seymour Papert described this model as a "little person."
 Two other terms I've seen are homunculus and kobito (Japanese for child).
-
 
 Add to my book learning the release of [BeOS](https://en.wikipedia.org/wiki/BeOS) in 1995.
 BeOS was designed from the ground up to provide multitasking and multiprocessing.
@@ -42,18 +40,19 @@ Instead, the topics were heavily focused on:
 
 There was one workshop on [Agent-oriented methodologies](http://www.oopsla.org/2002/fp/files/wor-14.html)
 which was Actor-like.
-The [workshop summary](http://www.oopsla.org/2002/fp/files/wor-14.html)stated,
+The [workshop summary](http://www.oopsla.org/2002/fp/files/wor-14.html) stated,
 "Following the success of object technology, the next advance is likely to be the introduction...agent technology for business applications."
+(Interestingly, there were several sessions, including a two-day panel session, discussing how OOP had failed.)
 
 Next advance? I thought it was already here.
 
-Interestingly, there were several sessions, including a two-day panel session, discussing how OOP had failed.
 
 Both I and a co-worker left OOPSLA disheartened.
 This was not why we had come.
 
-Eventually, I started using ObjectPascal/Delphi and eventually Python OOP, which were enjoyable but left me wanting something better.
+Eventually, I started using ObjectPascal/Delphi and eventually Python OOP, C++, C#, etc.,
+which left me wanting something better.
 
-Now, I can put that behind me and dig into a mature Actor model environment.
+Elixir on BEAM is the mature Actor model for which I've been looking.
 
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_

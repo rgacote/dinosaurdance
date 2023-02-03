@@ -36,3 +36,8 @@ clauses and pattern matching of parameters replaces most of the
 control flow seen in other languages.”
 
 “Elixir exceptions are intended for things that should never happen in normal operation”
+
+“Elixir developers are so comfortable creating new processes,
+they’ll often do it at times when you’d have created an object in a language such as Java.”
+
+_All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_
