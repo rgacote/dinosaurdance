@@ -46,13 +46,12 @@ The [workshop summary](http://www.oopsla.org/2002/fp/files/wor-14.html) stated,
 
 Next advance? I thought it was already here.
 
-
 Both I and a co-worker left OOPSLA disheartened.
 This was not why we had come.
 
 Eventually, I started using ObjectPascal/Delphi and eventually Python OOP, C++, C#, etc.,
 which left me wanting something better.
 
-Elixir on BEAM is the mature Actor model for which I've been looking.
+Elixir on BEAM is the mature Actor model for which I've been looking __and__ it has Agents as well.
 
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_
