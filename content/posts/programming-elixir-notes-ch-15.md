@@ -2,7 +2,7 @@
 title: "Programming Elixir Chapter 15 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-02-21T01:00:00-05:00
+date: 2023-02-07T01:00:00-05:00
 subtitle: "Working with Multiple Processes"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
@@ -17,7 +17,7 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 
 1. You can spawn an anonymous function.
 
-1. `self` is the current PID.
+1. `self()` returns the current PID.
 
 1. `receive` is a one-time event. Once event is received, the receiver is gone.
    Address this by recursing into yourself.
@@ -31,9 +31,9 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook]
   end
 {{< /highlight >}}
 
-1. Add `after` to receiver to go away after `n` seconds.
+1. Add `after` to a receiver to go away after `n` seconds of inactivity.
 
-1. Multiple `receive` blocks within the same pid all receive the message.
+1. Multiple `receive` blocks within the same pid all receive the messages.
 
 1. `receive` blocks can have guard clauses.
 
@@ -53,11 +53,12 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 
 1. `spawn_monitor` is more understandable to me.
    The parent receives exit message from the child.
-
    Tried working through how to catch exceptions but have not gotten the pattern matching right yet.
 
 1. The _Parallel Map_ section answers the question of how to receive messages in order.
    Use the original pid (`^pid`) in the map.
+   - Also shows how the messages hang around even when you're not listening.
+     This is listening, in order, for messages from a specific PID.
 
 1. Tested this by rewriting the spawned anonymous function to sleep a random amount of time
     {{< highlight elixir >}}
@@ -69,11 +70,13 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook]
     end
     {{< /highlight >}}
 
+1. Actors wrap processes with state.
+
 ## WorkingWithMultipleProcesses-1
 Ran on my machine.
 
 ## WorkingWithMultipleProcesses-2
-Write a program that spans two processes and then passes each a unique token ("fred" and "betty").
+Write a program that spans two processes and then passes each a unique token (:fred and :betty).
 Have them send the tokens back.
 - Is the order in which replies are received deterministic in theory? In practice?
 - If either answer is no, how would you make it so?
@@ -83,9 +86,10 @@ Have them send the tokens back.
 - Not deterministic, though in practice I'd be surprised to see them return out of order (surprise is the operant term).
 - My understanding is that not being deterministic is a feature.
   I'd possibly go to a queue?
+  - Further reading, look for the responses by `^pid`, in order.
 
 ## WorkingWithMultipleProcesses-3
-Use spawn_link to start a process.
+Use `spawn_link` to start a process.
 Have that process send a message to the parent and exit immediately.
 Have parent sleep for 1000ms then receive as many messages as are waiting.
 
@@ -110,11 +114,11 @@ Change `spawn_link` to `spawn_monitor`.
 - Need to figure out how to catch exceptions.
 
 ## WorkingWithMultipleProcesses-6
-Why assign `self` to `me` in the `Parallel` example?
+Why assign `self()` to `me` in the `Parallel` example?
 
 ### Answers
+- Spawning occurs before function executes.
 - The `self()` in the anonymous function is the pid of the spawned function.
-  Spawning occurs before function executes.
 
 ## WorkingWithMultipleProcesses-7
 Change `^pid` (and `pid`) to `_pid`.
@@ -125,6 +129,11 @@ Any difference in output.
 - Yes, when I add the random sleep.
 - A nice little race condition.
 
+## WorkingWithMultipleProcesses-8
+Ran and played with several variations of the Fibonacci code.
+
+## WorkingWithMultipleProcesses-9
+Punted on this exercise as I realize I'm likely to use GenServer in any production code.
 
 
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_
