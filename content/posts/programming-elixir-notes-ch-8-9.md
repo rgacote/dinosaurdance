@@ -15,6 +15,7 @@ Chapter 9 is a quick aside on types.
 
 Neither chapter has exercises.
 
+<!--more-->
 1) You can only have one struct per module.
 
 1) Different syntax for updating a key's value and adding a key.

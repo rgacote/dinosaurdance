@@ -8,6 +8,9 @@ image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
+Summary
+
+<!--more-->
 
 
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_

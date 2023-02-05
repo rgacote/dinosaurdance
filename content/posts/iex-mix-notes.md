@@ -10,6 +10,8 @@ tags: [LearningElixir, Elixir, IEx, mix, pry, dbg]
 Further side-quest to become comfortable with IEx/mix/dbg/pry.
 Learning commandline debugging since I've not been able to figure out how to launch a debuggable commandline program from VSCode.
 
+<!--more-->
+
 ## IEx
 
 A quick introduction to IEx functionality: [8 + 1 things...](https://nts.strzibny.name/elixir-interactive-shell-iex/).

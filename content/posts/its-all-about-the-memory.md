@@ -11,6 +11,8 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook, Erlang]
 One minute into the [Programming Elixir](https://pragprog.com/titles/elixir16/programming-elixir-1-6/)
 book's foreward and the focus is unlike any other programming book I've read.
 
+<!--more-->
+
 The foreward by José Valim spotlights the historic necessity of keeping, mutating,
 and freeing single piece of memory memory-limited computers.
 

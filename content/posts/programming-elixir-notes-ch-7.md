@@ -8,6 +8,10 @@ image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
 ---
 
+Making the best of recursion.
+
+<!--more-->
+
 1) Chapter 7 uses recursion where I would use iteration or list comprehension in Python.
 
 1) Exercises 1 thru 4 solved:

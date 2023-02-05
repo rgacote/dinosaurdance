@@ -12,7 +12,7 @@ Setting up a VSCode environment before tackling the Chapter 13 exercises.
 
 A side-foray into tooling after being away for a few days.
 
-
+<!--more-->
 
 ## Basic Installation
 - [Basic Installation](https://code.visualstudio.com/docs/setup/mac) from Microsoft.

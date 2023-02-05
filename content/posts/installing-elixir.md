@@ -15,6 +15,8 @@ You can install [Livebook](https://livebook.dev/#install) or install the command
 
 Here's how I installed Elixir on my Mac OS 13.1 (Ventura) environment.
 
+<!--more-->
+
 1) Install [Xcode Command Line Tools](https://mac.install.guide/commandlinetools/4.html)
 1) Install [Homebrew](https://brew.sh/)
 

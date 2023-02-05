@@ -8,7 +8,9 @@ image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
 ---
 
-1. Strings are UTF-8 encoded.
+Strings are UTF-8 encoded.
+
+<!--more-->
 
 1. Triple-quotes used for _heredocs_ function slightly differently than Python's triple quotes.
    Python keeps the initial linebreak unless the first line has `\`.

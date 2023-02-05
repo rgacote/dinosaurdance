@@ -17,6 +17,8 @@ Came back after a few days and was able to make significant progress on Chapter 
 
 Things are starting to click.
 
+<--more-->
+
 1. There's always a function for it.
    * Use `[element | _]`, not `list[0]`.
    * Use `Map.fetch(map, key)`, not `map["key"]`.

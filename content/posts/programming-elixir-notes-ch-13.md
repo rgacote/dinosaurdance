@@ -8,7 +8,13 @@ image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
+Spent a lot of time Googling in order to complete exercise #4.
+Wrapping my head around piping and enumeration.
+Testing helps.
+Short snippets in LiveBook helps.
+Practiced documenting.
 
+<!--more-->
 
 1. `mix new` did not create the ./config directory.
 
@@ -75,11 +81,6 @@ I see where I can improve efficiencies by using map/reduce and doing additional 
 
 Most importantly, it works!
 
-- Spent a lot of time Googling.
-- Wrapping my head around piping and enumeration.
-- Testing helps.
-- Short snippets in LiveBook helps.
-- Practiced documenting.
 
 - Reduce a list of maps into a map:
   {{< highlight elixir >}}

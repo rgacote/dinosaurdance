@@ -8,8 +8,10 @@ image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
-1) It takes awhile to get used to not seeing function `return` statements.
+It takes awhile to get used to not seeing function `return` statements.
 Drives home the point that everything is an evaluation.
+
+<!--more-->
 
 1) If you define an anonymous function within a module it must either be used or start with the underscore (`_`) character.
     {{< highlight elixir >}}

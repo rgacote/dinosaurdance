@@ -8,9 +8,12 @@ image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
 ---
 
-## Enums
-1) Earlier chapters focused on list processing via recursion.
+Earlier chapters focused on list processing via recursion.
 Now we're getting into the more familiar iterables.
+
+<!--more-->
+
+## Enums
 
 1) Stream is similar to the Python Generator; calculate next value as needed.
 

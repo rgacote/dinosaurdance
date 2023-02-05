@@ -8,19 +8,21 @@ image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
 ---
 
-1) Unlike Python lambda functions, Elixir anonymous functions can be arbitrarily complex
+Unlike Python lambda functions, Elixir anonymous functions can be arbitrarily complex
 (though I guess there is a limit to what is practicable from a maintainability point of view).
 
-2) Anonymous functions are basic types and can be bound to a variable.
+<!--more-->
 
-3) Named functions are scoped to a module, anonymous functions are not.
+1. Anonymous functions are basic types and can be bound to a variable.
+
+1. Named functions are scoped to a module, anonymous functions are not.
 Still trying to fully understand this scoping.
 
-4) Anonymous functions remember the values of variables in the outer scope.
+1. Anonymous functions remember the values of variables in the outer scope.
 This can be both powerful and confusing.
 
 
-4) The three-value FizzBuzz task was such fun that I looked ahead a little and did a more traditional FizzBuzz example.
+1. The three-value FizzBuzz task was such fun that I looked ahead a little and did a more traditional FizzBuzz example.
     {{< highlight elixir >}}
     fizzbuzz = fn
       value when rem(value, 3) == 0 and rem(value, 5) == 0 -> "FizzBuzz"
@@ -40,14 +42,14 @@ This can be both powerful and confusing.
 
     {{< /highlight >}}
 
-1) `_ -> value` does not work in the above FizzBuzz since the passed parameter is not captured.
+1. `_ -> value` does not work in the above FizzBuzz since the passed parameter is not captured.
    `_ -> "Hello"` would work since we arent' using the passed parameter.
 
-5) It is going to take my Python fingers some time to stop typing `for x in`.
+1. It is going to take my Python fingers some time to stop typing `for x in`.
 
-6) In the Greeter example, if you want the output, "I don't know you Dave", you need to match on `name` vs. `_`.
+1. In the Greeter example, if you want the output, "I don't know you Dave", you need to match on `name` vs. `_`.
    `_`, `^varname`, and `varname` in an anonymous function match statement match anything, the original value of the varname, and the varname.
 
-7) The `&` shortcut to anonymous functions reminds me of the Python lambda function.
+1. The `&` shortcut to anonymous functions reminds me of the Python lambda function.
 
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_

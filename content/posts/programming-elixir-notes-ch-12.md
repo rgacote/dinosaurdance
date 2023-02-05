@@ -8,13 +8,14 @@ image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
 ---
 
-1. Elixir has an `unless` keyword, which I don't recall seeing in any other language I've used.
+Elixir has an `unless` keyword, which I don't recall seeing in any other language I've used.
 
-1. “Elixir exceptions are intended for things that should never happen in normal operation”
+“Elixir exceptions are intended for things that should never happen in normal operation”
 
-1. Trailing `!` in a function name is an Elixir convention indicating failure raises an exception.
+Trailing `!` in a function name is an Elixir convention indicating failure raises an exception.
    We've already seeing this in the `File.open!` call in previous exercises.
 
+<!--more-->
 
 ## Exercises
 

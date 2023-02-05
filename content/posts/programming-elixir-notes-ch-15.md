@@ -8,7 +8,9 @@ image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
-1. Elixir/Erlang processes are not operating system processes.
+Elixir/Erlang processes are not operating system processes.
+
+<!--more-->
 
 1. Spawn a task within a module by passing the function name as an atom, and parameters.
 {{< highlight elixir >}}

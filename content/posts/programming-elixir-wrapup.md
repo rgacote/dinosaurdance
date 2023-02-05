@@ -7,6 +7,9 @@ subtitle: "Final Thoughts"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
+Notes
+
+<!--more-->
 
 1. Check the (few) [errata](https://devtalk.com/books/programming-elixir-1-6/errata).
 

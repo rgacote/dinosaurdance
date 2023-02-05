@@ -8,6 +8,10 @@ image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
+Working through all the tooling examples.
+
+<!--more-->
+
 ## Debugging
 1. Use the new `dbg` instead of the `IEx.pry` as shown to trigger a debug.
 

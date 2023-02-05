@@ -10,6 +10,8 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 
 For me, the lure of Elixir is not functional programming, it's Actors.
 
+<!--more-->
+
 When I first learned of Object Oriented Programming (OOP) my reading quickly
 lead me to [Smalltalk](https://en.wikipedia.org/wiki/History_of_the_Actor_model#Smalltalk)
 and then to [Simula](https://en.wikipedia.org/wiki/History_of_the_Actor_model#Simula).

@@ -12,6 +12,8 @@ I'm used to skimming technical books.
 The decision to make notes and document my learning experience is causing me to
 slow down and spend more time with what I'm reading.
 
+<!--more-->
+
 1) The caret (`^`) _pins_ a variable's value in a match:
     {{< highlight elixir >}}
     a = 1

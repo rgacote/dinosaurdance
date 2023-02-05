@@ -20,6 +20,8 @@ Along the way, I'll also install Elixir and LiveBook on my Mac.
 
 Let's dance!
 
+<!--more-->
+
 ## Reading
 1. [Programming Elixir](https://pragprog.com/titles/elixir16/programming-elixir-1-6/)
 1. [Elixir in Action](https://www.manning.com/books/elixir-in-action-second-edition)
