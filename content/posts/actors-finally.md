@@ -8,7 +8,7 @@ image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
-For me, the lure of Elixir is not functional programming, it's Actors.
+For me, the lure of Elixir is Actors.
 
 <!--more-->
 
@@ -32,7 +32,7 @@ In my mind, these two concepts were a match.
 Imagine my surprise when I attended [OOPSLA 2022](http://www.oopsla.org/2002/) in Seattle Washington
 and found that hardly any of the talks and workshops had anything to do with the Actor model.
 
-Instead, the topics were heavily focused on:
+Instead, the topics were:
 - Data storage
 - Multi-platform objects
 - Aspect Oriented Software
@@ -54,6 +54,6 @@ This was not why we had come.
 Eventually, I started using ObjectPascal/Delphi and eventually Python OOP, C++, C#, etc.,
 which left me wanting something better.
 
-Elixir on BEAM is the mature Actor model for which I've been looking __and__ it has Agents as well.
+Elixir on BEAM is the mature Actor model for which I've been looking __and__ it has Agents, which are Actors with memory.
 
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_
