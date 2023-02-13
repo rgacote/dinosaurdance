@@ -2,7 +2,7 @@
 title: "Programming Elixir Chapter 17 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-02-28T01:00:00-05:00
+date: 2023-02-15T01:00:00-05:00
 subtitle: "OTP: Servers"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
@@ -57,5 +57,7 @@ to name the server and implement the API in the same file.
 for alternate solution with implementation separated out.
 I like this approach when the module is complex.
 
+# OTP-Servers-5
+[Source code](https://github.com/rgacote/ProgrammingElixirExercises/tree/OTP-Server-05/otpservers) to implement `terminate` callback.
 
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_
