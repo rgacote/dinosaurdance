@@ -2,7 +2,7 @@
 title: "Quotes from Programming Elixir"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2024-01-01T01:09:21-05:00
+date: 2023-12-01T01:09:21-05:00
 subtitle: ""
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
@@ -39,5 +39,11 @@ control flow seen in other languages.”
 
 “Elixir developers are so comfortable creating new processes,
 they’ll often do it at times when you’d have created an object in a language such as Java.”
+
+“Beam, <... is> like its own little operating system running on top of your host operating system”
+
+Excerpts From Programming Elixir ≥ 1.6 by Dave Thomas
+https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=0
+This material may be protected by copyright.
 
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_
