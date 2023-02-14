@@ -2,15 +2,19 @@
 title: "Programming Elixir Chapter 18 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-02-21T01:00:00-05:00
+date: 2023-02-18T01:00:00-05:00
 subtitle: "OTP: Supervisors"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
-An OTP Supervisor manages one or more processes, which can be additional Supervisors.
+In order to reliably remember a value, we spin up a process that does nothing except remembering.
+This isolates the information storage, which has maximal reliability, from information manipulation,
+which can have all sorts of problems.
 
 <!--more-->
+
+1. An OTP Supervisor manages one or more processes, which can be additional Supervisors.
 
 1. Start a Supervisor project as follows:
    {{< highlight elixir >}}
@@ -28,6 +32,17 @@ An OTP Supervisor manages one or more processes, which can be additional Supervi
    @moduledoc false
    {{< /highlight >}}
 
+1. Supervisor restart strategies can be:
+   - `:one_for_one`: Restart the failed server.
+   - `:one_for_all`: Restart all the servers if any fail.
+   - `:rest_for_one`: Restart server and child servers that appear later in the `children` list.
+
+1. GenServers can declare when they should be restarted:
+   - `:permanent`: Always restart after termination.
+   - `:temporary`: Never restart after termination.
+   - `:transient`: Restart only after an abnormal termination.
+
+  The default is `:permanent`.
 
 ## OTP-Supervisors-1
 Add a Supervisor to the Stack application. [Source](https://github.com/rgacote/ProgrammingElixirExercises/tree/OTP-Supervisors-1/stack)
@@ -35,6 +50,15 @@ Add a Supervisor to the Stack application. [Source](https://github.com/rgacote/P
 Changed module name from `Stack` to `Stack.Server`, which it is in the book.
 Better defines the module's purpose.
 
-Renamed the project from `otpserver` to `stack` now that it is used across multiple chapters.
+- Made pushing new value <0 crash, since popping the empty stack does not crash in my implementation.
+
+- Renamed the project from `otpserver` to `stack` now that it is used across multiple chapters.
+
+## OTP-Supervisors-2
+Add a separate Stash process. [Source](https://github.com/rgacote/ProgrammingElixirExercises/tree/OTP-Supervisors-2/stack)
+
+- Move the stack initialization to the Stash.
+- With this approach, we can no longer manually initialize the stack via `Stack.Server.init`
+- In real-life, we'd likely have a `Stack.Server.reset`.
 
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_

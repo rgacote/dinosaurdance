@@ -2,7 +2,7 @@
 title: "Programming Elixir Chapter 17 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-02-15T01:00:00-05:00
+date: 2023-02-16T01:00:00-05:00
 subtitle: "OTP: Servers"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
