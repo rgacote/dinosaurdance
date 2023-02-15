@@ -8,6 +8,13 @@ image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
+My interest is in application development so macros are not something I expect to ever be creating.
+So this is mostly a chapter for reading.
+
+Did work through the first two exercises.
+Took awhile for me to understand that I cannot use a macro-defined function in the module where it was expanded.
+Makes sense since Elixir first compiles then loads, so the dynamically-created function isn't available for use.
+
 <!--more-->
 
 1. Never use a macro when you could use a function.
