@@ -2,7 +2,7 @@
 title: "Programming Elixir Chapter 18 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-02-18T01:00:00-05:00
+date: 2023-02-17T01:00:00-05:00
 subtitle: "OTP: Supervisors"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]

@@ -7,7 +7,10 @@ subtitle: "Final Thoughts"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
-Notes
+
+Talk about being slightly out of date. >= 1.6 and Elixir is now 1.14.
+
+Distillery is 1.5 in book and 2.1 in 2019.
 
 <!--more-->
 

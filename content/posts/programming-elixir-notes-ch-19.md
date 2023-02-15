@@ -2,7 +2,7 @@
 title: "Programming Elixir Chapter 19 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-02-19T01:00:00-05:00
+date: 2023-02-20T01:00:00-05:00
 subtitle: "A More Complex Example"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
