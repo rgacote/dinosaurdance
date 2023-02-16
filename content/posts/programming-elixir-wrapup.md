@@ -9,13 +9,15 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
 Step #1 of my Learning Elixir [journey](https://rgacote.github.io/dinosaurdance/posts/the-plan/) is complete.
-Hasn't gone precisely to plan.
 I had expected to mostly read and instead I worked through most of the exercises.
 
-So far, a useful trip:
+A useful first step:
 - The Elixir syntax no longer looks quite so foreign.
 - Pattern matching caused a fundamental shift in how I think about writing functions.
 - I'm confident I can write and deploy a simple application.
+- I have a reasonable understanding of message passing.
+- Still lots of practice mapping and reducing.
+- Actors!
 
 I appreciate the positive feedback I've received from my posts.
 The primary audience for these posts is myself, to keep myself motivated and gauge my progress.
