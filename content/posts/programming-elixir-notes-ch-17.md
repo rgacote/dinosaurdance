@@ -8,19 +8,33 @@ image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
-Dave discusses an alternate component-based approach to writing GenServers.
-I liked the general approach, but think that breaking it into three files was too complex.
+Dave discusses an alternate _component-based_ approach to writing GenServers.
+This consists of modules in three files:
+- A public API to hide the GenServer complexity.
+- The GenServer interface.
+- Implementatation.
+
+The public API is just a wrapper to the GenServer functions and the
+GenServer functions are just a wrapper to the implementation.
+This hides the GenServer call/cast complexity and isolates the implementation.
+
+I like this approach, but think that breaking it into three files is too complex.
+If the public API is only a wrapper to the GenServer API and the GenServer API is only
+ a wrapper to the implementation, we can easily put them into a single file.
 
 My [approach](https://github.com/rgacote/ProgrammingElixirExercises/tree/OTP-Server-4a/otpservers)
 implements the GenServer in two files:
 - Public API which calls the GenServer functions.
 - Implementation
 
-The public API is just a wrapper to the GenServer functions and the
-GenServer functions are just a wrapper to the implementation.
-This hides the GenServer call/cast complexity and isolates the implementation.
 
 <!--more-->
+
+_Update 2023-02-16: I'm generally working a bit beyond my postings.
+In retrospect, I should have broken the public API and the GenServer interface
+into two modules, and kept them in the same file. I may have focused too much on the author
+breaking the modules into separate files. Keeping these initial thoughts to reflect my
+thinking at the time._
 
 1. An OTP server (GenServer) is a module containing one or more callbacks functions with standard names.
 
