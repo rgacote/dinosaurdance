@@ -2,13 +2,16 @@
 title: "Quotes from Programming Elixir"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-12-01T01:09:21-05:00
+date: 2023-03-06T01:09:21-05:00
 subtitle: ""
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 {{<figure src="./k15-photos-7_sQDeHKZTg-unsplash-threads-cropped.png" title="Threads" alt="Image of threads coming out of tops of multiple spools of sewing thread.">}}
 [Programming Elixir ≥1.6: Functional |> Concurrent |> Pragmatic |> Fun](https://pragprog.com/titles/elixir16/programming-elixir-1-6/) by Dave Thomas.
+
+
+Some quotes I found particularly interesting.
 
 “But mostly, I want you to have fun.”
 
