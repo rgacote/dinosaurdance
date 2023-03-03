@@ -2,15 +2,12 @@
 title: "Programming Elixir Chapter 25 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-03-03T01:00:00-05:00
+date: 2023-03-03T01:05:00-05:00
 subtitle: "More Cool Stuff"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
 ---
 
-Protocols remind me of Python's duck typing.
-
-<!--more-->
 
 ## Writing Your Own Sigils
 
@@ -18,6 +15,9 @@ Protocols remind me of Python's duck typing.
 
 1. User-defined sigils are not globally available. Need to be imported.
 Reduces the risk of running into a system-defined sigil.
+
+<!--more-->
+
 
 ## Multi-app Umbrella Projects
 There seems to be some community disagreement about umbrella projects.

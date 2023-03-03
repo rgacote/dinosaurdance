@@ -2,7 +2,7 @@
 title: "Programming Elixir Chapter 24 Notes"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-03-02T01:00:00-05:00
+date: 2023-03-03T01:00:00-05:00
 subtitle: "Protocols--Polymorphic Functions"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook, Python]
