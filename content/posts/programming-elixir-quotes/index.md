@@ -20,6 +20,7 @@ Some quotes I found particularly interesting.
 “You no longer have to think too hard about protecting your data consistency in a multithreaded environment.”
 
 “I don’t want to hide data. I want to transform it.”
+<!--more-->
 
 “You’re going to have to unlearn a whole lot of what you know about programming.
 Many of your instincts will be wrong.

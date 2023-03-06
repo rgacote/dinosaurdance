@@ -2,7 +2,7 @@
 title: "Programming Elixir Wrap-up"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-03-07T08:00:00-05:00
+date: 2023-03-08T08:00:00-05:00
 subtitle: "Final Thoughts"
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
