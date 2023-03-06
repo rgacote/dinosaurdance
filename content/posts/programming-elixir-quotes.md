@@ -7,7 +7,7 @@ subtitle: ""
 image: ""
 tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
-![Threads](/images/k15-photos-7_sQDeHKZTg-unsplash-threads-cropped.png)
+![Threads](/dinosaurdance/images/k15-photos-7_sQDeHKZTg-unsplash-threads-cropped.png)
 [Programming Elixir ≥1.6: Functional |> Concurrent |> Pragmatic |> Fun](https://pragprog.com/titles/elixir16/programming-elixir-1-6/) by Dave Thomas.
 
 
