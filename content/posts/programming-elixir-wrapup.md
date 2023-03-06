@@ -9,6 +9,7 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 ---
 
 Step #1 of my Learning Elixir [journey](https://rgacote.github.io/dinosaurdance/posts/the-plan/) is complete.
+
 I had expected to mostly read and instead I worked through most of the exercises.
 
 A useful first step:
@@ -22,7 +23,7 @@ A useful first step:
 I appreciate the positive feedback I've received from my posts.
 The primary audience for these posts is myself, to keep myself motivated and gauge my progress.
 
-Still lots to learn, the dance continues.
+Still lots to learn, the dance continues and yes, Dave, I did have fun. Thank you.
 
 <!--more-->
 
