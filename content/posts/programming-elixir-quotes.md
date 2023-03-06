@@ -11,7 +11,7 @@ tags: [LearningElixir, Elixir, ProgrammingElixirBook]
 [Programming Elixir ≥1.6: Functional |> Concurrent |> Pragmatic |> Fun](https://pragprog.com/titles/elixir16/programming-elixir-1-6/) by Dave Thomas.
 
 
-Some quotes I found particularly interesting, insightful, or inspiring.
+Some of Dave's words I found particularly interesting, insightful, or inspiring.
 
 “But mostly, I want you to have fun.”
 
