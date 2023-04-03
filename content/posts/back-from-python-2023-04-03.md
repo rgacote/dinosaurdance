@@ -5,7 +5,7 @@ type: ""
 date: 2023-04-03T01:00:00-05:00
 subtitle: ""
 image: ""
-tags: [LearningElixir, Python]
+tags: [LearningElixir, Python, ReportLab]
 ---
 
 I'm ready to get back to Elixir after spending the last few weeks using Python and [ReportLab/RML](https://www.reportlab.com/) to generate multi-thousand line PDF reports.
