@@ -5,7 +5,7 @@ type: ""
 date: 2023-04-13T00:00:01-05:00
 subtitle: "Elixir for Programmers, Second Edition"
 image: ""
-tags: [LearningElixir, Elixir, IEx, ElixirForProgrammers]
+tags: [LearningElixir, Elixir, ElixirForProgrammers]
 ---
 
 ## Notes
