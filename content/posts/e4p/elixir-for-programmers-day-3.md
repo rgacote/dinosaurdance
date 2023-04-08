@@ -5,7 +5,7 @@ type: ""
 date: 2023-04-14T00:00:01-05:00
 subtitle: "Elixir for Programmers, Second Edition"
 image: ""
-tags: [LearningElixir, Elixir, IEx, ElixirForProgrammers]
+tags: [LearningElixir, Elixir, ElixirForProgrammers]
 ---
 
 Creating a function that declares a parameter twice in order to check if two different passed-in parameters are identical is not something I would have thought of.
