@@ -1,31 +1,26 @@
 ---
-title: ""
+title: "Notes on Our First Project"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-04-07T01:00:00-05:00
+date: 2023-04-10T00:00:01-05:00
 subtitle: "Elixir for Programmers, Second Edition"
 image: ""
-tags: [LearningElixir, Elixir, IEx,ElixirForProgrammers]
+tags: [LearningElixir, Elixir, IEx, ElixirForProgrammers]
 ---
-TODO:
-- Review and revise description.
-- Figure out why length does not work in a pipe.
-- Link to [Our First Project](https://github.com/rgacote/Elixir4Programmers2ndExercises/tree/OurFirstProject)
 
-Separate dictionary project is new to me.
-`@`at compile time.
+Setting up the dictionary project as an actual separate Elixir project is a more structured approach than I've seen so far.
+Use of multiple projects has been previously discussed but examples to date have been more at the module level within a project.
+Excited to see this approach introduced so early in the course.
+Already changing my assumptions about future project construction.
 
-I'm having problems with this:
-{{< highlight  elixir >}}
-iex(34)> "bobby jones" |> String.split("", trim: true) |> Enum.sort() |> Enum.join()
-" bbbejnoosy"
-{{< /highlight>}}
-
-From my reading of the documentation, I expect the initial blank to have been removed.
-I can't seem to get that to happen.
+Also new to me was the use of `@` to run a function at compile time.
+I have used `@` notation, but only to declare a fixed value.
+Not sure when I would use a dynamic compile-time value vs. a configuration, but good to know it exists.
 
 <!--more-->
+
 ## Notes
+- Link to the [Our First Project](https://github.com/rgacote/Elixir4Programmers2ndExercises/tree/OurFirstProject) repository.
 - Course uses Elixir 1.12.3. I'm using Elixir 1.14.2.
 - Set up .iex.exs to match recommendation.
 - In IEx:
@@ -102,6 +97,7 @@ iex(7)> String.myers_difference(world_enough, bacon_enough)
    {{< highlight python >}}
    # Python
    "".join(sorted([*"bobby jones"]))
+   {{< /highlight >}}
 
 2. Some lines of conventional code translated to Elixir.
    {{< highlight  elixir >}}
@@ -110,19 +106,14 @@ iex(7)> String.myers_difference(world_enough, bacon_enough)
     " bbbejnoosy"
 
     # length(split(wordlist, /\n/))
-    # Why isn't length working in the pipe? I'm missing something.
-    iex(2)> lines = "bobby jones\nsuzie queue" |> String.split("\n")
-    iex(3)> length(lines)
+    iex(2)> "bobby jones\nsuzie queue" |> String.split("\n") |> length
     2
 
     # join(split(string, "\t"), ",")
-    iex(4)> "tabbed\twords" |> String.split("\t") |> Enum.join(",")
+    iex(3)> "tabbed\twords" |> String.split("\t") |> Enum.join(",")
     "tabbed,words"
-
-
-
-   {{< /highlight  >}}
 
    ' bbbejnoosy'
    {{< /highlight >}}
+
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_
