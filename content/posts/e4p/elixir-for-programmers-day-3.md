@@ -12,7 +12,6 @@ Creating a function that declares a parameter twice in order to check if two dif
 
 Drives home the point that pattern matching within a function is the same pattern matching used to select the function to run.
 
-
 <!--more-->
 
 ## Notes
