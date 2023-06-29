@@ -69,6 +69,6 @@ to determine which versions to install.
 1) Test by starting IEx:
    {{< highlight bash >}}
    iex
-   ```
+   {{< /highlight >}}
 
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_
