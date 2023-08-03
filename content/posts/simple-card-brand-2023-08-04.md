@@ -27,10 +27,11 @@ I thought less about algorithms and more about the shape of the data.
 I started by using String matching to distinguish card brands but found that approach led to more String handling in the private functions.
 Doing the conversion up front led to some wordy pattern matches, but less code.
 
-1. I'm amused to have already written a `defguard` macro.
+1. I'm already writing `defguard` macros.
 I've considered macros a fairly advanced topic and have just skimmed those chapters.
 
     The macro simplified an otherwise wordy guard.
+    Still, I know to use cautiously.
 
 ## Next Steps
 
@@ -40,9 +41,9 @@ I've considered macros a fairly advanced topic and have just skimmed those chapt
 
 1. Add China UnionPay, Diners, JCB, Maestro, and Visa Electron.
 
-1. Package structure.
+1. Proper Mix project (including tests).
 
-1. Tests.
+1. More brands.
 
 1. Publish(?)
 
