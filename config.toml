@@ -42,7 +42,7 @@ copyright = "2022 Raymond GA Côté. All rights reserved."
     series   = "series"
 
 [languages]
-  [languages.en]
+  [languages.en.params]
     title = "Dinosaur Dance"
     subtitle = "A dinosaur programmer learning to dance with Elixir"
     keywords = ""
