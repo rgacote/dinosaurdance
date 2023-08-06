@@ -3,7 +3,7 @@ title: "Streaming Lists"
 subtitle: "StreamData Property Testing"
 author: "ray@AppropriateSolutions.com"
 type: ""
-date: 2023-08-06T19:00:00-05:00
+date: 2023-08-06T19:00:00-04:00
 image: ""
 tags: [LearningElixir, Elixir, SimpleCardBrand, StreamData, Testing]
 #LearningElixir #Elixir #SimpleCardBrand
