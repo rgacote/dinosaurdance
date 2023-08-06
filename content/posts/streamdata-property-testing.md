@@ -5,7 +5,7 @@ author: "ray@AppropriateSolutions.com"
 type: ""
 date: 2023-08-06T03:00:00-05:00
 image: ""
-tags: [LearningElixir, Elixir, SimpleCardBrand]
+tags: [LearningElixir, Elixir, SimpleCardBrand, StreamData, Testing]
 #LearningElixir #Elixir #SimpleCardBrand
 ---
 
