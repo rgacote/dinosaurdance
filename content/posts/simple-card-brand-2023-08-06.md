@@ -1,5 +1,5 @@
 ---
-title: "Convert SimpleCardBrand To A mix Project"
+title: "A SimpleCardBrand mix Project"
 # subtitle: "and more card brands"
 author: "ray@AppropriateSolutions.com"
 type: ""
@@ -9,13 +9,14 @@ tags: [LearningElixir, Elixir, SimpleCardBrand]
 #LearningElixir #Elixir #SimpleCardBrand
 ---
 
+Created a mix project.
+
 Added guards to `card_brand` that check for String and Integer parameters then
 moved the single file into a [mix project](https://github.com/rgacote/SimpleCardBrand/tree/v0.1.0).
 
-Every card brand now has its own test file.
+Every card brand has its own test file.
 The tests validate against the information on the [Wikipedia](https://en.wikipedia.org/wiki/Payment_card_number) page.
-
-Each brand is tested for each documented prefix for each documented account number length.
+Each brand is tested for documented prefix and account number length.
 
 As suspected, there were a few lurking bugs which have now been corrected.
 
