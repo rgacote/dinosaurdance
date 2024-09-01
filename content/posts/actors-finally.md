@@ -29,7 +29,7 @@ Add to my book learning the release of [BeOS](https://en.wikipedia.org/wiki/BeOS
 BeOS was designed from the ground up to provide multitasking and multiprocessing.
 In my mind, these two concepts were a match.
 
-Imagine my surprise when I attended [OOPSLA 2022](http://www.oopsla.org/2002/) in Seattle Washington
+Imagine my surprise when I attended [OOPSLA 2002](http://www.oopsla.org/2002/) in Seattle Washington
 and found that hardly any of the talks and workshops had anything to do with the Actor model.
 
 Instead, the topics were:
