@@ -1,21 +1,21 @@
 # baseURL = 'http://localhost'
 baseURL = 'https://rgacote.github.io/dinosaurdance/'
-
-#title = 'Dinosaur Dance'
 languageCode = 'en-us'
 theme = 'beautifulhugo'
+title = 'Dinosaur Dance'
 paginate = 10
 publishDir = "public"
-copyright = "2022 Raymond GA Côté. All rights reserved."
+copyright = "2023-{year} Raymond GA Côté. All rights reserved."
+
 
 [params]
+  pygmentsCodeFences = true
+  pygmentsUseClasses = true
+
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
-
-  # Subtitle for home
-  #homeSubtitle = "An old dinosaur learning to dance with Elixir"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
@@ -24,7 +24,7 @@ copyright = "2022 Raymond GA Côté. All rights reserved."
   enableSharingButtons = true
 
   # Metadata mostly used in document's head
-  description = "Learning Elixir"
+  description = "An old dinosaur learns Elixir"
   keywords = "homepage, blog"
   images = ["img"]
   staticDir = ["static"]
@@ -44,7 +44,7 @@ copyright = "2022 Raymond GA Côté. All rights reserved."
 [languages]
   [languages.en.params]
     title = "Dinosaur Dance"
-    subtitle = "A dinosaur programmer learning to dance with Elixir"
+    subtitle = "A coding dinosaur learns to dance with Elixir"
     keywords = ""
     copyright = '<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0 Universal</a>'
     readOtherPosts = "Read other posts"
@@ -61,9 +61,7 @@ copyright = "2022 Raymond GA Côté. All rights reserved."
     name       = "About"
     url        = "/about"
 
-[Author]
-    name = "Raymond GA Côté"
-    email = "ray@AppropriateSolutions.com"
+params.author.name = "Raymond GA Côté"
+params.author.email = "ray.cote@mac.com"
 
 [social]
-  twitter = "rgacote"
