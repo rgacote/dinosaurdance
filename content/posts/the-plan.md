@@ -11,7 +11,7 @@ tags: [LearningElixir, Elixir]
 My preferred approach to learning new programming languages and frameworks is to read then do.
 Reading for enjoyment, rather than complete comprehension, allows me to become familiar with the topic while creating waypoints I can connect in the future.
 
-For learning Elixir I intend to do a bit more reading then usual in order to switch into the functional mindset.
+For learning Elixir I intend to do a bit more reading than usual in order to switch into the functional mindset.
 
 After reading, I usually jump right into designing and coding a project.
 However, this time I've decided to add an online course before digging into any project.
