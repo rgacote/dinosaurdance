@@ -17,7 +17,7 @@ They sought to "efficiently build and maintain scalable, fault-tolerant systems.
 
 Francesco's belief is that you need to understand both Erlang and OTP to truly understand Elixir.
 
-Saša Jurić's preface references his [The Evangelist](http://theerlangelist.com) blog, which will keep me busy for awhile;
+Saša Jurić's preface references his [The Erlangist](http://theerlangelist.com) blog, which will keep me busy for awhile;
 particularly the six-part "Understanding Macros."
 
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_
