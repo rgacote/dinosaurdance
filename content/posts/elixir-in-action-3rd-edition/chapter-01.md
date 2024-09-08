@@ -1,6 +1,6 @@
 ---
-title: "Elixir in Action: Chapter 1"
-subtitle: "Overview of Erlang/Benefits of Elixir"
+title: "Overview of Erlang/Benefits of Elixir"
+subtitle: "Elixir in Action: Chapter 1"
 author: "ray.cote@mac.com"
 type: ""
 date: 2024-09-09T00:01:00-05:00
