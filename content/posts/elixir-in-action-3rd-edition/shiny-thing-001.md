@@ -12,7 +12,7 @@ Spent the week reading through Saša Jurić's six-part _Understanding macros_ on
 I've previously managed to wend my way through a macro in one of the _Programming Elixir_ exercises but didn't really get a handle on it.
 Saša's explanation of `quote` and `unquote` was clear and understandable.
 
-## Notable Quotes and Notes
+## Notable Notes and Quotes
 
 <!--more-->
 

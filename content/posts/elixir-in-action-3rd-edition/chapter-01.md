@@ -16,7 +16,7 @@ In Python, I'd look at the AST and bytecode; in Pascal, the p-code; in C, the as
 One focus is a review of how you can use the Elixir/Erlang/BEAM environment to create self-contained server-side systems that include web server, background jobs, caches, crash recovery, etc.
 
 
-## Notable Quotes and Notes
+## Notable Notes and Quotes
 
 
 
@@ -30,5 +30,5 @@ One focus is a review of how you can use the Elixir/Erlang/BEAM environment to c
 - “Elixir is an alternative language for the Erlang virtual machine that allows you to write cleaner, more compact code that does a better job of revealing your intentions.”
 
 
-_Excerpts From [Elixir in Action, Third Edition](https://www.manning.com/books/elixir-in-action-third-edition), Sasa Juric._
+_Quotes are excerpts From [Elixir in Action, Third Edition](https://www.manning.com/books/elixir-in-action-third-edition), Sasa Juric._
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_
