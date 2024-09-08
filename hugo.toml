@@ -3,7 +3,7 @@ baseURL = 'https://rgacote.github.io/dinosaurdance/'
 languageCode = 'en-us'
 theme = 'beautifulhugo'
 title = 'Dinosaur Dance'
-paginate = 10
+pagination.pageSize = 10
 publishDir = "public"
 copyright = "2023-{year} Raymond GA Côté. All rights reserved."
 
