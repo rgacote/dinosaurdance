@@ -8,7 +8,7 @@ image: ""
 tags: [LearningElixir, Elixir, ElixirInAction]
 ---
 
-The book opens with a high level overview the technologies on which Elixir is built: Erlang and the BEAM.
+The book opens with a high level overview of the technologies on which Elixir is built: Erlang and the BEAM.
 
 I've always benefitted from being familiar with the level below where I was programming.
 In Python, I'd look at the AST and bytecode; in Pascal, the p-code; in C, the assembly code, and in assembly code I had hardware emulators (and Soft-ICE back in the day).
