@@ -85,5 +85,7 @@ I ended up using `Enum.reduce` and accumulating a map containing the largest lin
 Presented solution is much simpler.
 As always, knowing the library is as important as knowing the language.
 
+Github [repository](https://github.com/rgacote/ElixirInAction3rdEdition).
+
 _Quotes are excerpts From [Elixir in Action, Third Edition](https://www.manning.com/books/elixir-in-action-third-edition), Sasa Juric._
 _All notes and comments are my own opinion. Follow me at [@rgacote@genserver.social](https://genserver.social/rgacote)_
