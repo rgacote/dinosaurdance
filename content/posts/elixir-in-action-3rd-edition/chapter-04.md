@@ -8,14 +8,8 @@ image: ""
 tags: [Beginner, MyElixirStatus, ElixirInAction]
 ---
 
-Building higher-level data structures.
-
-The chapter states that modifier functions (functions that transform the data), such as `String.upcase` return data of the same type.
-What seems to be missing from the chapter is a discussion of _conversion_ functions, functions that change the data into a different type.
-For example, `Money.to_string`.
-
-If found that typing and testing all the small code snippets added to my Elixir "muscle memory" and seeing what standard practices look like.
-For example, when updating todo list example, I would not have thought of passing a lambda function for the update vs. just passing new data.
+I found that typing and testing all the small code snippets added to my Elixir "muscle memory" and seeing what standard practices look like.
+For example, when updating the _todo_ list example, I would not have thought of passing a lambda function for the update vs. just passing new data.
 The lambda function provides much more flexibility at the cost of some slight complexity increase (at least I'm still seeing it as a complexity increase at this stage).
 
 I need to get more comfortable with updating structures.
@@ -43,6 +37,10 @@ I need to remember that anonymous functions don't need to be simple one-liners.
 - “A struct may exist only in a module, and a single module can define only one struct.”
 - A struct pattern can't match a map, but a map pattern can match a struct.
 - A protocol is a module in which you declare functions without implementing them.
+- The chapter states that modifier functions (functions that transform the data), such as `String.upcase` return data of the same type.
+What seems to be missing from the chapter is a discussion of _conversion_ functions, functions that change the data into a different type.
+For example, `Money.to_string`. Not sure if I'm missing something.
+
 
 Github [repository](https://github.com/rgacote/ElixirInAction3rdEdition).
 
