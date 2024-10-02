@@ -9,7 +9,7 @@ tags: [MyElixirStatus, ElixirInAction]
 ---
 
 Though primarily about processes, messages, and servers, another thing I found significant in this chapter is the liberal use of lambda functions.
-Many places where I would tend to create a new function and then call are replaced with lambda functions.
+Many places where I would tend to create a new function and then call it are replaced with lambda functions.
 Need to become more comfortable with this.
 
 
