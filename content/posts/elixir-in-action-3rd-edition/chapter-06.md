@@ -1,5 +1,5 @@
 ---
-title: "Generic Service Processes"
+title: "Generic Server Processes"
 subtitle: "Elixir in Action: Chapter 6"
 author: "ray.cote@mac.com"
 type: ""
