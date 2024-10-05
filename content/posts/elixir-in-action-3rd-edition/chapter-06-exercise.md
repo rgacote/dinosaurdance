@@ -14,7 +14,7 @@ tags: [MyElixirStatus, ElixirInAction]
 
 <!--more-->
 
-My Python-brain still sees `TodoList.add_entry(todo_list, new_entry)` as some object call and not a function to modify `todo_list`.
+My Python-brain still sees `TodoList.add_entry(todo_list, new_entry)` as an object method call and not a function to modify `todo_list`.
 
 Additionally, when inside a GenServer `cast` or `call` I'm thinking, "Where did the `todo_list` come from?"
 It came from the GenServer and is the GenServer's state.
