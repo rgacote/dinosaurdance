@@ -12,6 +12,8 @@ tags: [MyElixirStatus, ElixirInAction]
 - Functions are applied to data.
 - Functions are applied to data!!!
 
+<!--more-->
+
 My Python-brain still sees `TodoList.add_entry(todo_list, new_entry)` as some object call and not a function to modify `todo_list`.
 
 Additionally, when inside a GenServer `cast` or `call` I'm thinking, "Where did the `todo_list` come from?"
